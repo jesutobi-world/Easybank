@@ -10,7 +10,7 @@ function menuToggle() {
 }
 
 // Event listener to hide the menu when the user starts scrolling
-var prevScrollPos = window.scrollY;
+let prevScrollPos = window.scrollY;
 window.addEventListener('scroll', function () {
     let currentScrollPos = window.scrollY;
     let mobileMenu = document.querySelector('.mobile-menu');
