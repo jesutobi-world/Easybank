@@ -12,14 +12,14 @@
     <div class="logo w-1/2 h-full flex justify-start items-center">
       <img src="./images/logo.svg" alt="logo" class="w-36">
     </div>
-    <div class="menu w-1/2 h-full flex justify-end items-center">
-      <img src="./images/icon-hamburger.svg" alt="menu" class="w-10 absolute" >
-      <img src="./images/icon-close.svg" alt="close" class="w-8 absolute">
+    <div class="toggle w-1/2 h-full flex justify-end items-center cursor-pointer" onclick="return menuToggle()">
+      <img src="./images/icon-hamburger.svg" alt="menu" class="w-10 absolute menu transition-all duration-150" >
+      <img src="./images/icon-close.svg" alt="close" class="w-8 absolute hidden close transition-all duration-150">
     </div>
   </nav>
   <main class="h-auto w-full pt-24">
     <div class="hero relative w-full h-auto pb-10">
-      <div class="mobile-menu h-full w-full flex items-start justify-center bg-black p-8 bg-opacity-50 z-10 absolute hidden"  >
+      <div class="mobile-menu h-full w-full flex items-start justify-center bg-black p-8 bg-opacity-50 z-10 absolute transition ease-out duration-300 hidden"  >
         <div class="menu-items bg-white rounded-md w-full flex items-center justify-center flex-col gap-8 p-10" >
           <a href="#" class="text-darkBlue text-xl font-medium">Home</a>
           <a href="#" class="text-darkBlue text-xl font-medium">About</a>
@@ -121,7 +121,7 @@
   </main>
   <footer class="bg-darkBlue w-full h-auto flex flex-col gap-10 items-center justify-center p-8">
     <div class="bg-darkBlue w-full h-auto flex justify-center items-center">
-      <img src="./images/logo.svg" alt="logo" class="mix-blend-lighten">
+      <img src="./images/logo.svg" alt="logo" class="mix-blend-difference w-1/2">
     </div>
     <div class="socials flex gap-5">
       <a href="#">
@@ -151,5 +151,6 @@
     <button class='rounded-full w-52 h-16 text-white text-xl mt-4 bg-gradient-to-r from-limeGreen to-brightCyan'>Request Invite</button>
     <div class="trademark text-gray-400"> © Easybank. All Rights Reserved</div>
   </footer>
+  <script src="./script.js"></script>
 </body>
 </html>
