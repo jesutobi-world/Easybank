@@ -7,82 +7,149 @@
   <link href="/dist/output.css" rel="stylesheet">
   <title>Easybank landing page</title>
 </head>
-<body>
-  Home
-  About
-  Contact
-  Blog
-  Careers
+<body class="h-auto w-screen font-publicSans">
+  <nav class="h-24 w-full bg-white flex justify-between p-5 items-center fixed z-20">
+    <div class="logo w-1/2 h-full flex justify-start items-center">
+      <img src="./images/logo.svg" alt="logo" class="w-36">
+    </div>
+    <div class="menu w-1/2 h-full flex justify-end items-center">
+      <img src="./images/icon-hamburger.svg" alt="menu" class="w-10 absolute" >
+      <img src="./images/icon-close.svg" alt="close" class="w-8 absolute">
+    </div>
+  </nav>
+  <main class="h-auto w-full pt-24">
+    <div class="hero relative w-full h-auto pb-10">
+      <div class="mobile-menu h-full w-full flex items-start justify-center bg-black p-8 bg-opacity-50 z-10 absolute hidden"  >
+        <div class="menu-items bg-white rounded-md w-full flex items-center justify-center flex-col gap-8 p-10" >
+          <a href="#" class="text-darkBlue text-xl font-medium">Home</a>
+          <a href="#" class="text-darkBlue text-xl font-medium">About</a>
+          <a href="#" class="text-darkBlue text-xl font-medium">Contact</a>
+          <a href="#" class="text-darkBlue text-xl font-medium">Blog</a>
+          <a href="#" class="text-darkBlue text-xl font-medium">Careers</a>
+        </div>
+      </div>
+      <div class="mockups h-auto w-full bg-hero bg-no-repeat bg-cover p-4" >
+        <img src="./images/image-mockups.png" alt="mockups" class="h-full w-full">
+      </div>
+      <div class="hero-text flex flex-col gap-5 text-center items-center justify-center p-4">
+        <h1 class='text-darkBlue text-5xl'>Next generation digital banking</h1>
+        <p class="text-grayishBlue leading-7 text-lg">Take your financial life online. Your Easybank account will be a one-stop-shop 
+        for spending, saving, budgeting, investing, and much more.</p>
+        <button class='rounded-full w-52 h-16 text-white text-xl mt-6 bg-gradient-to-r from-limeGreen to-brightCyan'>Request Invite</button>
+      </div>
+    </div>
 
-  Request Invite
-
-
-
-  Next generation digital banking
-
-  Take your financial life online. Your Easybank account will be a one-stop-shop 
-  for spending, saving, budgeting, investing, and much more.
-
-  Request Invite
-
-
-
-  Why choose Easybank?
-
-  We leverage Open Banking to turn your bank account into your financial hub. Control 
-  your finances like never before.
-
-  Online Banking
-  Our modern web and mobile applications allow you to keep track of your finances 
-  wherever you are in the world.
-
-  Simple Budgeting
-  See exactly where your money goes each month. Receive notifications when you’re 
-  close to hitting your limits.
-
-  Fast Onboarding
-  We don’t do branches. Open your account in minutes online and start taking control 
-  of your finances right away.
-
-  Open API
-  Manage your savings, investments, pension, and much more from one account. Tracking 
-  your money has never been easier.
-
-  
-
-  Latest Articles
-
-  By Claire Robinson
-  Receive money in any currency with no fees
-  The world is getting smaller and we’re becoming more mobile. So why should you be 
-  forced to only receive money in a single …
-
-  By Wilson Hutton
-  Treat yourself without worrying about money
-  Our simple budgeting feature allows you to separate out your spending and set 
-  realistic limits each month. That means you …
-
-  By Wilson Hutton
-  Take your Easybank card wherever you go
-  We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
-  while you’re abroad. We’ll even show you …
-
-  By Claire Robinson
-  Our invite-only Beta accounts are now live!
-  After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
-  It’s easy to request an invite through the site ...
-
-  
-
-  About Us
-  Contact
-  Blog
-  Careers
-  Support
-  Privacy Policy
-
-  Request Invite
-
-  © Easybank. All Rights Reserved
+    <div class="services h-auto w-full pt-14 pb-14 pl-6 pr-6 flex flex-col gap-14 justify-center items-center bg-lightGrayishBlue text-center">
+      <div class="flex flex-col gap-5 items-center justify-center h-auto w-full">
+        <h2 class="text-4xl w-2/3 text-darkBlue">Why choose Easybank?</h2>
+        <p class="text-lg leading-8 text-grayishBlue">We leverage Open Banking to turn your bank account into your financial hub. Control 
+        your finances like never before.</p>
+      </div>
+      <div class="flex flex-col gap-5 items-center justify-center h-auto w-full">
+        <img class="h-28 w-28 rounded-full" src="./images/icon-online.svg" alt="online">
+        <h3 class="text-darkBlue text-3xl">Online Banking</h3>
+        <p class="text-lg leading-8 text-grayishBlue">Our modern web and mobile applications allow you to keep track of your finances 
+         wherever you are in the world.</p>
+      </div>
+      <div class="flex flex-col gap-5 items-center justify-center h-auto w-full">
+        <img class="h-28 w-28 rounded-full" src="./images/icon-budgeting.svg" alt="budgeting">
+        <h3 class="text-darkBlue text-3xl">Simple Budgeting</h3>
+        <p class="text-lg leading-8 text-grayishBlue">See exactly where your money goes each month. Receive notifications when you’re 
+        close to hitting your limits.</p>
+      </div>
+      <div class="flex flex-col gap-5 items-center justify-center h-auto w-full">
+        <img class="h-28 w-28 rounded-full" src="./images/icon-onboarding.svg" alt="onboarding">
+        <h3 class="text-darkBlue text-3xl">Fast Onboarding</h3>
+        <p class="text-lg leading-8 text-grayishBlue">We don’t do branches. Open your account in minutes online and start taking control 
+        of your finances right away.</p>
+      </div>
+      <div class="flex flex-col gap-5 items-center justify-center h-auto w-full">
+        <img class="h-28 w-28 rounded-full" src="./images/icon-api.svg" alt="api">
+        <h3 class="text-darkBlue text-3xl">Open API</h3>
+        <p class="text-lg leading-8 text-grayishBlue">Manage your savings, investments, pension, and much more from one account. Tracking 
+        your money has never been easier.</p>
+      </div>
+    </div>
+    <div class="articles h-auto w-full pt-14 pb-14 pl-6 pr-6 bg-veryLightGrayishBlue">
+      <h2 class="text-darkBlue text-4xl text-center pb-8">Latest Articles</h2>
+      <div class="w-full h-[550px] rounded-t-xl  overflow-hidden grid grid-rows-2 mb-8 shadow-md bg-white">
+        <div class="w-full overflow-hidden">
+          <img src="./images/image-currency.jpg" alt="currency" class="h-full w-full object-cover">
+        </div>
+        <div class="p-6">
+          <p class="text-grayishBlue text-sm pb-2">By Claire Robinson</p>
+          <h4 class="text-darkBlue text-xl font-medium pb-4">Receive money in any currency with no fees</h4>
+          <p class="text-grayishBlue text-lg"> The world is getting smaller and we’re becoming more mobile. So why should you be 
+          forced to only receive money in a single …
+          </p>
+        </div>
+      </div>
+      <div class="w-full h-[550px] rounded-t-xl  overflow-hidden grid grid-rows-2 mb-8 shadow-md bg-white">
+        <div class="w-full overflow-hidden">
+          <img src="./images/image-restaurant.jpg" alt="restaurant" class="h-full w-full object-cover">
+        </div>
+        <div class="p-6">
+          <p class="text-grayishBlue text-sm pb-2">By Wilson Hutton</p>
+          <h4 class="text-darkBlue text-xl font-medium pb-4">Treat yourself without worrying about money</h4>
+          <p class="text-grayishBlue text-lg">Our simple budgeting feature allows you to separate out your spending and set 
+          realistic limits each month. That means you …</p>
+        </div>
+      </div>
+      <div class="w-full h-[550px] rounded-t-xl  overflow-hidden grid grid-rows-2 mb-8 shadow-md bg-white">
+        <div class="w-full overflow-hidden">
+          <img src="./images/image-plane.jpg" alt="plane" class="h-full w-full object-cover">
+        </div>
+        <div class="p-6">
+          <p class="text-grayishBlue text-sm pb-2">By Wilson Hutton</p>
+          <h4 class="text-darkBlue text-xl font-medium pb-4">Take your Easybank card wherever you go</h4>
+          <p class="text-grayishBlue text-lg">We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
+          while you’re abroad. We’ll even show you …</p>
+        </div>
+      </div>
+      <div class="w-full h-[550px] rounded-t-xl  overflow-hidden grid grid-rows-2 mb-8 shadow-md bg-white">
+        <div class="w-full overflow-hidden">
+          <img src="./images/image-confetti.jpg" alt="confetti" class="h-full w-full object-cover">
+        </div>
+        <div class="p-6">
+          <p class="text-grayishBlue text-sm pb-2">By Claire Robinson</p>
+          <h4 class="text-darkBlue text-xl font-medium pb-4">Our invite-only Beta accounts are now live!</h4>
+          <p class="text-grayishBlue text-lg">After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
+          It’s easy to request an invite through the site ...</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-darkBlue w-full h-auto flex flex-col gap-10 items-center justify-center p-8">
+    <div class="bg-darkBlue w-full h-auto flex justify-center items-center">
+      <img src="./images/logo.svg" alt="logo" class="mix-blend-difference">
+    </div>
+    <div class="socials flex gap-5">
+      <a href="#">
+        <img src="./images/icon-facebook.svg" alt="facebook">
+      </a>
+      <a href="#">
+        <img src="./images/icon-youtube.svg" alt="youtube">
+      </a>
+      <a href="#">
+        <img src="./images/icon-twitter.svg" alt="twitter">
+      </a>
+      <a href="#">
+        <img src="./images/icon-pinterest.svg" alt="pinterest">
+      </a>
+      <a href="#">
+        <img src="./images/icon-instagram.svg" alt="instagram">
+      </a>
+    </div>
+    <div class="footer-nav flex flex-col gap-5 items-center justify-center w-full h-auto">
+      <a href="#" class=" text-veryLightGrayishBlue text-md ">About Us</a>
+      <a href="#" class=" text-veryLightGrayishBlue text-md ">Contact</a>
+      <a href="#" class=" text-veryLightGrayishBlue text-md ">Blog</a>
+      <a href="#" class=" text-veryLightGrayishBlue text-md ">Careers</a>
+      <a href="#" class=" text-veryLightGrayishBlue text-md ">Support</a>
+      <a href="#" class=" text-veryLightGrayishBlue text-md ">Privacy Policy</a>
+    </div>
+    <button class='rounded-full w-52 h-16 text-white text-xl mt-4 bg-gradient-to-r from-limeGreen to-brightCyan'>Request Invite</button>
+    <div class="trademark text-gray-400"> © Easybank. All Rights Reserved</div>
+  </footer>
 </body>
 </html>
