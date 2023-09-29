@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage:{
-        'hero': "url(/images/bg-intro-mobile.svg)"
+        'mobileHero': "url(/images/bg-intro-mobile.svg)",
+        'desktopHero': "url(/images/bg-intro-desktop.svg)"
       },
       textColor:{
         'darkBlue' : 'hsl(233, 26%, 24%)',
