@@ -9,16 +9,24 @@
 </head>
 <body class="h-auto w-screen font-publicSans relative scroll-smooth">
   <header class="flex flex-col gap-8 h-auto w-full">
-    <nav class="h-24 w-full z-20 bg-white flex justify-between p-5 items-center fixed md:pl-20 md:pr-20">
-      <div class="logo w-1/2 h-full flex justify-start items-center">
+    <nav class="h-24 w-full z-20 bg-white flex justify-between p-5 items-center fixed md:pl-20 md:pr-20 lg:h-16">
+      <div class="logo w-1/2 h-full flex justify-start items-center lg:w-auto">
         <img src="./images/logo.svg" alt="logo" class="w-36">
       </div>
-      <div class="toggle w-1/2 h-full flex justify-end items-center cursor-pointer" onclick="return menuToggle()">
+      <div class="toggle w-1/2 h-full flex justify-end items-center cursor-pointer lg:hidden" onclick="return menuToggle()">
         <img src="./images/icon-hamburger.svg" alt="menu" class="w-10 absolute menu transition-all duration-150" >
         <img src="./images/icon-close.svg" alt="close" class="w-8 absolute hidden close transition-all duration-150">
       </div>
+      <div class=" hidden lg:flex justify-center items-center w-auto h-full gap-6">
+        <a href="#" class="text-grayishBlue font-medium after:bg-gradient-to-r from-limeGreen to-brightCyan after:absolute after:h-1 after:w-0 after:bottom-[-80%] after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer relative hover:text-black transition-all transition-300s">Home</a>
+        <a href="#" class="text-grayishBlue font-medium  after:bg-gradient-to-r from-limeGreen to-brightCyan after:absolute after:h-1 after:w-0 after:bottom-[-80%] after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer relative hover:text-black transition-all transition-300s">About</a>
+        <a href="#" class="text-grayishBlue font-medium  after:bg-gradient-to-r from-limeGreen to-brightCyan after:absolute after:h-1 after:w-0 after:bottom-[-80%] after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer relative hover:text-black transition-all transition-300s">Contact</a>
+        <a href="#" class="text-grayishBlue font-medium  after:bg-gradient-to-r from-limeGreen to-brightCyan after:absolute after:h-1 after:w-0 after:bottom-[-80%] after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer relative hover:text-black transition-all transition-300s">Blog</a>
+        <a href="#" class="text-grayishBlue font-medium  after:bg-gradient-to-r from-limeGreen to-brightCyan after:absolute after:h-1 after:w-0 after:bottom-[-80%] after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer relative hover:text-black transition-all transition-300s">Careers</a>
+      </div>
+      <button class='rounded-full text-white text-sm bg-gradient-to-r from-limeGreen to-brightCyan hidden lg:flex justify-center items-center w-auto h-auto pt-2 pb-2 pr-4 pl-4'>Request Invite</button>
     </nav>
-    <div class="mobile-menu h-screen w-full flex items-start justify-center bg-gray-400 p-4 bg-opacity-50 z-10 transition ease-out duration-300 top-24 fixed left-0 hidden"  >
+    <div class="mobile-menu h-screen w-full flex items-start justify-center bg-gray-400 p-4 bg-opacity-50 z-10 transition ease-out duration-300 top-24 fixed left-0 hidden lg:hidden"  >
       <div class="menu-items bg-white rounded-md w-full flex items-center justify-center flex-col gap-8 p-10" >
         <a href="#" class="text-darkBlue text-xl font-medium">Home</a>
         <a href="#" class="text-darkBlue text-xl font-medium">About</a>
@@ -29,134 +37,144 @@
     </div>
   </header>
 
-  <main class="h-auto w-full pt-24">
-    <div class="hero w-full h-auto pb-10">
-      <div class="mockups h-auto w-full bg-mobileHero bg-no-repeat bg-cover p-4" >
+  <main class="h-auto w-full pt-24 lg:pt-0">
+    <div class="hero w-full h-auto pb-10 lg:flex justify-between flex-row-reverse bg-veryLightGrayishBlue items-center lg:h-[700px]">
+      <div class="mockups h-auto w-full bg-mobileHero bg-no-repeat bg-cover p-4 lg:bg-desktopHero lg:w-1/2" >
         <img src="./images/image-mockups.png" alt="mockups" class="h-full w-full">
       </div>
-      <div class="hero-text flex flex-col gap-5 text-center items-center justify-center p-4 md:pl-20 md:pr-20">
-        <h1 class='text-darkBlue text-7xl'>Next generation digital banking</h1>
-        <p class="text-grayishBlue leading-7 text-lg md:text-2xl md:p-4 md:leading-8">Take your financial life online. Your Easybank account will be a one-stop-shop 
+      <div class="hero-text flex flex-col gap-5 text-center items-center justify-center p-4 md:pl-20 md:pr-20 lg:w-1/2 lg:items-start">
+        <h1 class='text-darkBlue text-5xl lg:text-4xl lg:text-left lg:w-2/3'>Next generation digital banking</h1>
+        <p class="text-grayishBlue leading-7 text-lg md:text-2xl md:p-4 md:leading-8 lg:text-base lg:text-left lg:p-0 lg:w-5/6">Take your financial life online. Your Easybank account will be a one-stop-shop 
         for spending, saving, budgeting, investing, and much more.</p>
-        <button class='rounded-full w-52 h-16 text-white text-xl mt-6 bg-gradient-to-r from-limeGreen to-brightCyan'>Request Invite</button>
+        <button class='rounded-full w-52 h-16 text-white text-xl mt-6 bg-gradient-to-r from-limeGreen to-brightCyan lg:w-auto lg:h-auto lg:text-base lg:pt-1 lg:pb-1 lg:pl-3 lg:pr-3 lg:mt-0'>Request Invite</button>
       </div>
     </div>
 
     <div class="services h-auto w-full pt-14 pb-14 pl-6 pr-6 flex flex-col gap-14 justify-center items-center bg-lightGrayishBlue text-center">
-      <div class="flex flex-col gap-5 items-center justify-center h-auto w-full md:pl-20 md:pr-20">
-        <h2 class="text-4xl w-2/3 text-darkBlue">Why choose Easybank?</h2>
-        <p class="text-lg leading-8 text-grayishBlue md:text-xl">We leverage Open Banking to turn your bank account into your financial hub. Control 
+      <div class="flex flex-col gap-5 items-center justify-center h-auto w-full md:pl-20 md:pr-20 lg:items-start lg:gap-7">
+        <h2 class="text-4xl w-2/3 text-darkBlue lg:text-left lg:text-3xl font-semibold">Why choose Easybank?</h2>
+        <p class="text-lg leading-8 text-grayishBlue md:text-xl lg:text-left lg:text-base lg:w-2/3">We leverage Open Banking to turn your bank account into your financial hub. Control 
         your finances like never before.</p>
       </div>
-      <div class="flex flex-col gap-5 items-center justify-center md:pl-20 md:pr-20">
-        <div class="flex flex-col gap-5 items-center justify-center h-auto w-full">
-          <img class="h-28 w-28 rounded-full" src="./images/icon-online.svg" alt="online">
-          <h3 class="text-darkBlue text-3xl">Online Banking</h3>
-          <p class="text-lg leading-8 text-grayishBlue md:text-xl">Our modern web and mobile applications allow you to keep track of your finances 
+      <div class="flex flex-col gap-5 items-center justify-center md:pl-20 md:pr-20 lg:flex-row lg:items-start lg:justify-between">
+        <div class="flex flex-col gap-5 items-center justify-center h-auto w-full lg:items-start">
+          <img class="h-28 w-28 rounded-full lg:w-20 lg:h-20" src="./images/icon-online.svg" alt="online">
+          <h3 class="text-darkBlue text-3xl lg:text-xl">Online Banking</h3>
+          <p class="text-lg leading-8 text-grayishBlue md:text-xl lg:text-base lg:text-left">Our modern web and mobile applications allow you to keep track of your finances 
            wherever you are in the world.</p>
         </div>
-        <div class="flex flex-col gap-5 items-center justify-center h-auto w-full">
-          <img class="h-28 w-28 rounded-full" src="./images/icon-budgeting.svg" alt="budgeting">
-          <h3 class="text-darkBlue text-3xl">Simple Budgeting</h3>
-          <p class="text-lg leading-8 text-grayishBlue md:text-xl">See exactly where your money goes each month. Receive notifications when you’re 
+        <div class="flex flex-col gap-5 items-center justify-center h-auto w-full lg:items-start">
+          <img class="h-28 w-28 rounded-full lg:w-20 lg:h-20" src="./images/icon-budgeting.svg" alt="budgeting">
+          <h3 class="text-darkBlue text-3xl lg:text-xl">Simple Budgeting</h3>
+          <p class="text-lg leading-8 text-grayishBlue md:text-xl lg:text-base lg:text-left">See exactly where your money goes each month. Receive notifications when you’re 
           close to hitting your limits.</p>
         </div>
-        <div class="flex flex-col gap-5 items-center justify-center h-auto w-full">
-          <img class="h-28 w-28 rounded-full" src="./images/icon-onboarding.svg" alt="onboarding">
-          <h3 class="text-darkBlue text-3xl">Fast Onboarding</h3>
-          <p class="text-lg leading-8 text-grayishBlue md:text-xl">We don’t do branches. Open your account in minutes online and start taking control 
+        <div class="flex flex-col gap-5 items-center justify-center h-auto w-full lg:items-start">
+          <img class="h-28 w-28 rounded-full lg:w-20 lg:h-20" src="./images/icon-onboarding.svg" alt="onboarding">
+          <h3 class="text-darkBlue text-3xl lg:text-xl">Fast Onboarding</h3>
+          <p class="text-lg leading-8 text-grayishBlue md:text-xl lg:text-base lg:text-left">We don’t do branches. Open your account in minutes online and start taking control 
           of your finances right away.</p>
         </div>
-        <div class="flex flex-col gap-5 items-center justify-center h-auto w-full">
-          <img class="h-28 w-28 rounded-full" src="./images/icon-api.svg" alt="api">
-          <h3 class="text-darkBlue text-3xl">Open API</h3>
-          <p class="text-lg leading-8 text-grayishBlue md:text-xl">Manage your savings, investments, pension, and much more from one account. Tracking 
+        <div class="flex flex-col gap-5 items-center justify-center h-auto w-full lg:items-start">
+          <img class="h-28 w-28 rounded-full lg:w-20 lg:h-20" src="./images/icon-api.svg" alt="api">
+          <h3 class="text-darkBlue text-3xl lg:text-xl">Open API</h3>
+          <p class="text-lg leading-8 text-grayishBlue md:text-xl lg:text-base lg:text-left">Manage your savings, investments, pension, and much more from one account. Tracking 
           your money has never been easier.</p>
         </div>
       </div>
     </div>
-    <div class="articles h-auto w-full pt-14 pb-14 pl-6 pr-6 bg-veryLightGrayishBlue md:pl-20 md:pr-20">
-      <h2 class="text-darkBlue text-4xl text-center pb-8 md:pb-12">Latest Articles</h2>
-      <div class="flex flex-col items-center justify-center gap-5">
-        <div class="w-full h-[550px] rounded-t-xl  overflow-hidden grid grid-rows-2 mb-8 shadow-md bg-white md:w-[470px]">
+    <div class="articles h-auto w-full pt-14 pb-14 pl-6 pr-6 bg-veryLightGrayishBlue md:pl-20 md:pr-20 lg:items-start">
+      <h2 class="text-darkBlue text-4xl text-center pb-8 md:pb-12 lg:text-left lg:text-3xl font-semibold">Latest Articles</h2>
+      <div class="flex flex-col items-center justify-center gap-5 lg:flex-row lg:items-start lg:justify-between lg:gap-6">
+        <div class="w-full h-[550px] rounded-t-md  overflow-hidden grid grid-rows-2 mb-8 shadow-md bg-white md:w-[470px] lg:w-auto lg:h-[450px]">
           <div class="w-full overflow-hidden">
             <img src="./images/image-currency.jpg" alt="currency" class="h-full w-full object-cover">
           </div>
           <div class="p-6">
-            <p class="text-grayishBlue text-sm pb-2 md:text-lg">By Claire Robinson</p>
-            <h4 class="text-darkBlue text-xl font-medium pb-4 md:text-2xl">Receive money in any currency with no fees</h4>
-            <p class="text-grayishBlue text-lg md:text-xl" > The world is getting smaller and we’re becoming more mobile. So why should you be 
+            <p class="text-grayishBlue text-sm pb-2 md:text-lg lg:text-xs">By Claire Robinson</p>
+            <h4 class="text-darkBlue text-xl font-medium pb-4 md:text-2xl lg:text-base lg:pb-2 hover:text-brightCyan cursor-pointer transition-all transition-300">Receive money in any currency with no fees</h4>
+            <p class="text-grayishBlue text-lg md:text-xl lg:text-sm" > The world is getting smaller and we’re becoming more mobile. So why should you be 
             forced to only receive money in a single …
             </p>
           </div>
         </div>
-        <div class="w-full h-[550px] rounded-t-xl  overflow-hidden grid grid-rows-2 mb-8 shadow-md bg-white md:w-[470px]">
+        <div class="w-full h-[550px] rounded-t-md  overflow-hidden grid grid-rows-2 mb-8 shadow-md bg-white md:w-[470px] lg:w-auto lg:h-[450px]">
           <div class="w-full overflow-hidden">
             <img src="./images/image-restaurant.jpg" alt="restaurant" class="h-full w-full object-cover">
           </div>
           <div class="p-6">
-            <p class="text-grayishBlue text-sm pb-2 md:text-xl">By Wilson Hutton</p>
-            <h4 class="text-darkBlue text-xl font-medium pb-4 md:text-2xl">Treat yourself without worrying about money</h4>
-            <p class="text-grayishBlue text-lg md:text-xl">Our simple budgeting feature allows you to separate out your spending and set 
+            <p class="text-grayishBlue text-sm pb-2 md:text-xl lg:text-xs">By Wilson Hutton</p>
+            <h4 class="text-darkBlue text-xl font-medium pb-4 md:text-2xl lg:text-base lg:pb-2 hover:text-brightCyan cursor-pointer transition-all transition-150">Treat yourself without worrying about money</h4>
+            <p class="text-grayishBlue text-lg md:text-xl lg:text-sm">Our simple budgeting feature allows you to separate out your spending and set 
             realistic limits each month. That means you …</p>
           </div>
         </div>
-        <div class="w-full h-[550px] rounded-t-xl  overflow-hidden grid grid-rows-2 mb-8 shadow-md bg-white md:w-[470px]">
+        <div class="w-full h-[550px] rounded-t-md  overflow-hidden grid grid-rows-2 mb-8 shadow-md bg-white md:w-[470px] lg:w-auto lg:h-[450px]">
           <div class="w-full overflow-hidden">
             <img src="./images/image-plane.jpg" alt="plane" class="h-full w-full object-cover">
           </div>
           <div class="p-6">
-            <p class="text-grayishBlue text-sm pb-2 md:text-xl">By Wilson Hutton</p>
-            <h4 class="text-darkBlue text-xl font-medium pb-4 md:text-2xl">Take your Easybank card wherever you go</h4>
-            <p class="text-grayishBlue text-lg md:text-xl">We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
+            <p class="text-grayishBlue text-sm pb-2 md:text-xl lg:text-xs">By Wilson Hutton</p>
+            <h4 class="text-darkBlue text-xl font-medium pb-4 md:text-2xl lg:text-base lg:pb-2 hover:text-brightCyan cursor-pointer transition-all transition-150">Take your Easybank card wherever you go</h4>
+            <p class="text-grayishBlue text-lg md:text-xl lg:text-sm">We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
             while you’re abroad. We’ll even show you …</p>
           </div>
         </div>
-        <div class="w-full h-[550px] rounded-t-xl  overflow-hidden grid grid-rows-2 mb-8 shadow-md bg-white md:w-[470px]">
+        <div class="w-full h-[550px] rounded-t-md  overflow-hidden grid grid-rows-2 mb-8 shadow-md bg-white md:w-[470px] lg:w-auto lg:h-[450px]">
           <div class="w-full overflow-hidden">
             <img src="./images/image-confetti.jpg" alt="confetti" class="h-full w-full object-cover">
           </div>
           <div class="p-6">
-            <p class="text-grayishBlue text-sm pb-2 md:text-xl">By Claire Robinson</p>
-            <h4 class="text-darkBlue text-xl font-medium pb-4 md:text-2xl">Our invite-only Beta accounts are now live!</h4>
-            <p class="text-grayishBlue text-lg md:text-xl">After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
+            <p class="text-grayishBlue text-sm pb-2 md:text-xl lg:text-xs">By Claire Robinson</p>
+            <h4 class="text-darkBlue text-xl font-medium pb-4 md:text-2xl lg:text-base lg:pb-2 hover:text-brightCyan cursor-pointer transition-all transition-150">Our invite-only Beta accounts are now live!</h4>
+            <p class="text-grayishBlue text-lg md:text-xl lg:text-sm">After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
             It’s easy to request an invite through the site ...</p>
           </div>
         </div>
       </div>
     </div>
   </main>
-  <footer class="bg-darkBlue w-full h-auto flex flex-col gap-10 items-center justify-center p-8 ">
-    <div class="bg-darkBlue w-full h-auto flex justify-center items-center">
-      <img src="./images/footer-logo.svg" alt="logo" class="mix-blend-difference w-1/2">
+  <footer class="bg-darkBlue h-auto w-full flex flex-col gap-6 p-8 items-center justify-center lg:flex-row lg:justify-between lg:pl-20 lg:pr-20 lg:pt-10 lg:pb-10">
+    <div class="flex flex-col gap-6 items-center justify-center w-full h-auto lg:flex-row lg:gap-20 lg:w-auto">
+      <div class="flex flex-col gap-6 items-center justify-center w-full h-auto lg:gap-12 lg:items-start lg:w-auto">
+        <div class="w-full h-auto flex justify-center items-center lg:w-auto">
+          <img src="./images/footer-logo.svg" alt="logo">
+        </div>
+        <div class="socials flex gap-5 md:p-4 lg:items-start lg:p-0 lg:w-auto">
+          <a href="#">
+            <img src="./images/icon-facebook.svg" alt="facebook" class="md:w-[30px] md:h-[30px] lg:h-[20px] lg:w-[20px]">
+          </a>
+          <a href="#">
+            <img src="./images/icon-youtube.svg" alt="youtube" class="md:w-[30px] md:h-[30px] lg:h-[20px] lg:w-[20px]">
+          </a>
+          <a href="#">
+            <img src="./images/icon-twitter.svg" alt="twitter" class="md:w-[30px] md:h-[30px] lg:h-[20px] lg:w-[20px]">
+          </a>
+          <a href="#">
+            <img src="./images/icon-pinterest.svg" alt="pinterest" class="md:w-[30px] md:h-[30px] lg:h-[20px] lg:w-[20px]">
+          </a>
+          <a href="#">
+            <img src="./images/icon-instagram.svg" alt="instagram" class="md:w-[30px] md:h-[30px] lg:h-[20px] lg:w-[20px]">
+          </a>
+        </div>
+      </div>
+      <div class="footer-nav flex flex-col gap-5 items-center justify-center w-full h-auto lg:flex-row lg:items-start lg:gap-20 lg:w-auto lg:justify-between">
+        <div class="w-full h-auto flex flex-col items-center justify-center gap-6 lg:gap-6 lg:w-auto lg:items-start">
+          <a href="#" class=" text-veryLightGrayishBlue text-md md:text-xl lg:text-base hover:text-teal-600 transition-all transition-300s">About Us</a>
+          <a href="#" class=" text-veryLightGrayishBlue text-md md:text-xl lg:text-base hover:text-teal-600 transition-all transition-300s">Contact</a>
+          <a href="#" class=" text-veryLightGrayishBlue text-md md:text-xl lg:text-base hover:text-teal-600 transition-all transition-300s">Blog</a>
+        </div>
+        <div class="w-full h-auto flex flex-col items-center justify-center gap-6 lg:gap-6 lg:w-auto lg:justify-between lg:items-start">
+          <a href="#" class=" text-veryLightGrayishBlue text-md md:text-xl lg:text-base hover:text-teal-600 transition-all transition-300s">Careers</a>
+          <a href="#" class=" text-veryLightGrayishBlue text-md md:text-xl lg:text-base hover:text-teal-600 transition-all transition-300s">Support</a>
+          <a href="#" class=" text-veryLightGrayishBlue text-md md:text-xl lg:text-base hover:text-teal-600 transition-all transition-300s">Privacy Policy</a>
+        </div>
+      </div>
     </div>
-    <div class="socials flex gap-5 md:p-4">
-      <a href="#">
-        <img src="./images/icon-facebook.svg" alt="facebook" class="md:w-[30px] md:h-[30px]">
-      </a>
-      <a href="#">
-        <img src="./images/icon-youtube.svg" alt="youtube" class="md:w-[30px] md:h-[30px]">
-      </a>
-      <a href="#">
-        <img src="./images/icon-twitter.svg" alt="twitter" class="md:w-[30px] md:h-[30px]">
-      </a>
-      <a href="#">
-        <img src="./images/icon-pinterest.svg" alt="pinterest" class="md:w-[30px] md:h-[30px]">
-      </a>
-      <a href="#">
-        <img src="./images/icon-instagram.svg" alt="instagram" class="md:w-[30px] md:h-[30px]">
-      </a>
+    <div class="w-full h-auto flex flex-col items-center justify-center gap-6 lg:items-end lg:w-auto">
+      <button class='rounded-full w-auto h-auto pt-2 pb-2 pr-4 pl-4 text-white text-xl mt-4 bg-gradient-to-r from-limeGreen to-brightCyan lg:text-base'>Request Invite</button>
+      <div class="trademark text-gray-400 md:text-xl lg:text-base"> © Easybank. All Rights Reserved</div>
     </div>
-    <div class="footer-nav flex flex-col gap-5 items-center justify-center w-full h-auto">
-      <a href="#" class=" text-veryLightGrayishBlue text-md md:text-xl">About Us</a>
-      <a href="#" class=" text-veryLightGrayishBlue text-md md:text-xl">Contact</a>
-      <a href="#" class=" text-veryLightGrayishBlue text-md md:text-xl">Blog</a>
-      <a href="#" class=" text-veryLightGrayishBlue text-md md:text-xl">Careers</a>
-      <a href="#" class=" text-veryLightGrayishBlue text-md md:text-xl">Support</a>
-      <a href="#" class=" text-veryLightGrayishBlue text-md md:text-xl">Privacy Policy</a>
-    </div>
-    <button class='rounded-full w-52 h-16 text-white text-xl mt-4 bg-gradient-to-r from-limeGreen to-brightCyan'>Request Invite</button>
-    <div class="trademark text-gray-400 md:text-xl"> © Easybank. All Rights Reserved</div>
   </footer>
   <script src="./script.js"></script>
 </body>
